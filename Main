@@ -1,277 +1,277 @@
-	-- Instances:
+-- Instances:
 
-	local main = Instance.new("ScreenGui")
-	local Frame = Instance.new("Frame")
-	local UIGradient = Instance.new("UIGradient")
-	local UICorner = Instance.new("UICorner")
-	local decor = Instance.new("Frame")
-	local UICorner_2 = Instance.new("UICorner")
-	local TextButton = Instance.new("TextButton")
-	local UICorner_3 = Instance.new("UICorner")
-	local loading = Instance.new("TextLabel")
-	local UICorner_4 = Instance.new("UICorner")
-	local cancel = Instance.new("ImageButton")
-	local modules = Instance.new("Frame")
-	local UIGridLayout = Instance.new("UIGridLayout")
+local main = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local UICorner = Instance.new("UICorner")
+local decor = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local loading = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local cancel = Instance.new("ImageButton")
+local modules = Instance.new("Frame")
+local UIGridLayout = Instance.new("UIGridLayout")
 
-	--Properties:
+--Properties:
 
-	main.Name = "main"
-	main.Parent = game:GetService("CoreGui")
-	main.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-	main.ResetOnSpawn = false
+main.Name = "main"
+main.Parent = game:GetService("CoreGui")
+main.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+main.ResetOnSpawn = false
 
-	Frame.Parent = main
-	Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	Frame.Position = UDim2.new(0.206400007, 0, 0.23950617, 0)
-	Frame.Size = UDim2.new(0, 650, 0, 350)
+Frame.Parent = main
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.206400007, 0, 0.23950617, 0)
+Frame.Size = UDim2.new(0, 650, 0, 350)
 
-	UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(170, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 85, 255))}
-	UIGradient.Parent = Frame
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(170, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 85, 255))}
+UIGradient.Parent = Frame
 
-	UICorner.CornerRadius = UDim.new(0, 9)
-	UICorner.Parent = Frame
+UICorner.CornerRadius = UDim.new(0, 9)
+UICorner.Parent = Frame
 
-	decor.Name = "decor"
-	decor.Parent = Frame
-	decor.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-	decor.BackgroundTransparency = 0.650
-	decor.Size = UDim2.new(0, 650, 0, 28)
+decor.Name = "decor"
+decor.Parent = Frame
+decor.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+decor.BackgroundTransparency = 0.650
+decor.Size = UDim2.new(0, 650, 0, 28)
 
-	UICorner_2.CornerRadius = UDim.new(0, 9)
-	UICorner_2.Parent = decor
+UICorner_2.CornerRadius = UDim.new(0, 9)
+UICorner_2.Parent = decor
 
-	TextButton.Parent = Frame
-	TextButton.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
-	TextButton.Size = UDim2.new(0, 91, 0, 28)
-	TextButton.Font = Enum.Font.Ubuntu
-	TextButton.Text = "Gun OS"
-	TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-	TextButton.TextScaled = true
-	TextButton.TextSize = 14.000
-	TextButton.TextWrapped = true
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+TextButton.Size = UDim2.new(0, 91, 0, 28)
+TextButton.Font = Enum.Font.Ubuntu
+TextButton.Text = "Gun OS"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
 
-	UICorner_3.CornerRadius = UDim.new(0, 9)
-	UICorner_3.Parent = TextButton
+UICorner_3.CornerRadius = UDim.new(0, 9)
+UICorner_3.Parent = TextButton
 
-	loading.Name = "loading"
-	loading.Parent = Frame
-	loading.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
-	loading.BackgroundTransparency = 0.550
-	loading.Position = UDim2.new(0.140000001, 0, 0.362857133, 0)
-	loading.Size = UDim2.new(0, 467, 0, 133)
-	loading.Font = Enum.Font.Ubuntu
-	loading.Text = ""
-	loading.TextColor3 = Color3.fromRGB(0, 0, 0)
-	loading.TextSize = 30.000
-	loading.TextWrapped = true
-	loading.TextXAlignment = Enum.TextXAlignment.Left
-	loading.TextYAlignment = Enum.TextYAlignment.Top
+loading.Name = "loading"
+loading.Parent = Frame
+loading.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
+loading.BackgroundTransparency = 0.550
+loading.Position = UDim2.new(0.140000001, 0, 0.362857133, 0)
+loading.Size = UDim2.new(0, 467, 0, 133)
+loading.Font = Enum.Font.Ubuntu
+loading.Text = ""
+loading.TextColor3 = Color3.fromRGB(0, 0, 0)
+loading.TextSize = 30.000
+loading.TextWrapped = true
+loading.TextXAlignment = Enum.TextXAlignment.Left
+loading.TextYAlignment = Enum.TextYAlignment.Top
 
-	UICorner_4.CornerRadius = UDim.new(0, 9)
-	UICorner_4.Parent = loading
+UICorner_4.CornerRadius = UDim.new(0, 9)
+UICorner_4.Parent = loading
 
-	cancel.Name = "cancel"
-	cancel.Parent = Frame
-	cancel.BackgroundTransparency = 1.000
-	cancel.Position = UDim2.new(0.961538434, 0, 0, 0)
-	cancel.Size = UDim2.new(0, 25, 0, 25)
-	cancel.ZIndex = 2
-	cancel.Image = "rbxassetid://3926305904"
-	cancel.ImageRectOffset = Vector2.new(4, 4)
-	cancel.ImageRectSize = Vector2.new(24, 24)
+cancel.Name = "cancel"
+cancel.Parent = Frame
+cancel.BackgroundTransparency = 1.000
+cancel.Position = UDim2.new(0.961538434, 0, 0, 0)
+cancel.Size = UDim2.new(0, 25, 0, 25)
+cancel.ZIndex = 2
+cancel.Image = "rbxassetid://3926305904"
+cancel.ImageRectOffset = Vector2.new(4, 4)
+cancel.ImageRectSize = Vector2.new(24, 24)
 
-	modules.Name = "modules"
-	modules.Parent = Frame
-	modules.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	modules.BackgroundTransparency = 1.000
-	modules.Position = UDim2.new(0, 0, 0.0799999982, 0)
-	modules.Size = UDim2.new(0, 650, 0, 322)
-	modules.Visible = false
+modules.Name = "modules"
+modules.Parent = Frame
+modules.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+modules.BackgroundTransparency = 1.000
+modules.Position = UDim2.new(0, 0, 0.0799999982, 0)
+modules.Size = UDim2.new(0, 650, 0, 322)
+modules.Visible = false
 
-	UIGridLayout.Parent = modules
-	UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
-	UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
-	UIGridLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+UIGridLayout.Parent = modules
+UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.VerticalAlignment = Enum.VerticalAlignment.Center
 
-	-- Scripts:
+-- Scripts:
 
-	local function TOFBABG_fake_script() -- Frame.DragScript 
-		local script = Instance.new('LocalScript', Frame)
+local function TOFBABG_fake_script() -- Frame.DragScript 
+	local script = Instance.new('LocalScript', Frame)
 
-		--drag sistem
-		local UIS = game:GetService('UserInputService')
-		local frame = script.Parent
-		local dragToggle = nil
-		local dragSpeed = 0.25
-		local dragStart = nil
-		local startPos = nil
+	--drag sistem
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
 
-		local function updateInput(input)
-			local delta = input.Position - dragStart
-			local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
-				startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-			game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
-		end
-
-		frame.InputBegan:Connect(function(input)
-			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
-				dragToggle = true
-				dragStart = input.Position
-				startPos = frame.Position
-				input.Changed:Connect(function()
-					if input.UserInputState == Enum.UserInputState.End then
-						dragToggle = false
-					end
-				end)
-			end
-		end)
-
-		UIS.InputChanged:Connect(function(input)
-			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-				if dragToggle then
-					updateInput(input)
-				end
-			end
-		end)
-
-		--main code
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
 	end
-	coroutine.wrap(TOFBABG_fake_script)()
-	local function IJJSBBI_fake_script() -- Frame.main 
-		local script = Instance.new('LocalScript', Frame)
 
-		--mowe script
-		local UIS = game:GetService('UserInputService')
-		local frame = script.Parent
-		local dragToggle = nil
-		local dragSpeed = 0.25
-		local dragStart = nil
-		local startPos = nil
-
-		local function updateInput(input)
-			local delta = input.Position - dragStart
-			local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
-				startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-			game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
 		end
+	end)
 
-		frame.InputBegan:Connect(function(input)
-			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
-				dragToggle = true
-				dragStart = input.Position
-				startPos = frame.Position
-				input.Changed:Connect(function()
-					if input.UserInputState == Enum.UserInputState.End then
-						dragToggle = false
-					end
-				end)
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
 			end
-		end)
+		end
+	end)
 
-		UIS.InputChanged:Connect(function(input)
-			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-				if dragToggle then
-					updateInput(input)
-				end
-			end
-		end)
+	--main code
+end
+coroutine.wrap(TOFBABG_fake_script)()
+local function IJJSBBI_fake_script() -- Frame.main 
+	local script = Instance.new('LocalScript', Frame)
 
-		--varibs
-		debaunce = true
-		local TWS = game:GetService("TweenService")
-		local TWSinfo = TweenInfo.new(0.5,Enum.EasingStyle.Circular,Enum.EasingDirection.InOut,0)
-		main_scaled = true
-		local main_unscale = TWS:Create(script.Parent,TWSinfo,{Size = script.Parent.TextButton.Size})
-		local main_scale = TWS:Create(script.Parent,TWSinfo,{Size = script.Parent.Size})
-		local decor_unscale = TWS:Create(script.Parent.decor,TWSinfo,{Size = script.Parent.TextButton.Size})
-		local decor_scale = TWS:Create(script.Parent.decor,TWSinfo,{Size = script.Parent.decor.Size})
+	--mowe script
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
 
-		script.Parent.TextButton.MouseButton1Click:Connect(function()
-			if debaunce == false then
-				if main_scaled == true then
-					debaunce = true
-					decor_unscale:Play()
-					main_unscale:Play()
-					script.Parent.cancel.Visible = false
-					main_scaled = false
-					script.Parent.modules.Visible = false
-					debaunce = false
-				else
-					debaunce = true
-					script.Parent.cancel.Visible = true
-					decor_scale:Play()
-					main_scale:Play()
-					main_scaled = true
-					wait(0.5)
-					script.Parent.modules.Visible = true
-					debaunce = false
-				end
-			end
-		end)
-
-		--startup
-		wait(1)
-		script.Parent.loading.Text = "System starting up"
-		wait(0.1)
-		script.Parent.loading.Text = "System starting up."
-		wait(0.1)
-		script.Parent.loading.Text = "System starting up.."
-		wait(0.1)
-		script.Parent.loading.Text = "System starting up..."
-		wait(0.1)
-		script.Parent.loading.Text = "System starting up...."
-		wait(0.1)
-		script.Parent.loading.Text = "System starting up....."
-		wait(0.1)
-		script.Parent.loading.Text = "System starting up."
-		wait(0.1)
-		script.Parent.loading.Text = "System starting up.."
-		wait(0.1)
-		script.Parent.loading.Text = "System starting up..."
-		wait(0.1)
-		script.Parent.loading.Text = "System starting up...."
-		wait(0.1)
-		script.Parent.loading.Text = "System starting up....."
-		wait(0.1)
-		script.Parent.loading.Text = "System starting up."
-		wait(0.1)
-		script.Parent.loading.Text = "System starting up.."
-		wait(0.1)
-		script.Parent.loading.Text = "System starting up..."
-		wait(0.1)
-		script.Parent.loading.Text = "System starting up...."
-		wait(0.1)
-		script.Parent.loading.Text = "System starting up....."
-		wait(0.1)
-		script.Parent.loading.Text = "System starting up \n Loading libraries"
-		wait(0.2)
-		script.Parent.loading.Text = "System starting up \n Loading libraries."
-		wait(0.2)
-		script.Parent.loading.Text = "System starting up \n Loading libraries.."
-		wait(0.2)
-		script.Parent.loading.Text = "System starting up \n Loading libraries..."
-		wait(0.2)
-		script.Parent.loading.Text = "System starting up \n Loading libraries...."
-		wait(0.2)
-		script.Parent.loading.Text = "System starting up \n Loading libraries....."
-		wait(0.2)
-		script.Parent.loading.Text = "System starting up \n Libraries loaded \n Loging in"
-		wait(0.5)
-		script.Parent.loading.Text = "System starting up \n Libraries loaded \n Loging in."
-		wait(0.5)
-		script.Parent.loading.Text = "System starting up \n Libraries loaded \n Loging in.."
-		wait(0.5)
-		script.Parent.loading.Text = "System starting up \n Libraries loaded \n Loging in..."
-		wait(0.5)
-		script.Parent.loading.Text = "System loaded \n Welcome "..game.Players.LocalPlayer.DisplayName
-		wait(2)
-		script.Parent.loading:Destroy()
-		script.Parent.modules.Visible = true
-		debaunce = false
-
-		script.Parent.cancel.MouseButton1Click:Connect(function()
-			if debaunce == false and main_scaled == true then script.Parent.Parent:Destroy() end
-		end)
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
 	end
-	coroutine.wrap(IJJSBBI_fake_script)()
+
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+
+	--varibs
+	debaunce = true
+	local TWS = game:GetService("TweenService")
+	local TWSinfo = TweenInfo.new(0.5,Enum.EasingStyle.Circular,Enum.EasingDirection.InOut,0)
+	main_scaled = true
+	local main_unscale = TWS:Create(script.Parent,TWSinfo,{Size = script.Parent.TextButton.Size})
+	local main_scale = TWS:Create(script.Parent,TWSinfo,{Size = script.Parent.Size})
+	local decor_unscale = TWS:Create(script.Parent.decor,TWSinfo,{Size = script.Parent.TextButton.Size})
+	local decor_scale = TWS:Create(script.Parent.decor,TWSinfo,{Size = script.Parent.decor.Size})
+
+	script.Parent.TextButton.MouseButton1Click:Connect(function()
+		if debaunce == false then
+			if main_scaled == true then
+				debaunce = true
+				decor_unscale:Play()
+				main_unscale:Play()
+				script.Parent.cancel.Visible = false
+				main_scaled = false
+				script.Parent.modules.Visible = false
+				debaunce = false
+			else
+				debaunce = true
+				script.Parent.cancel.Visible = true
+				decor_scale:Play()
+				main_scale:Play()
+				main_scaled = true
+				wait(0.5)
+				script.Parent.modules.Visible = true
+				debaunce = false
+			end
+		end
+	end)
+
+	--startup
+	wait(1)
+	script.Parent.loading.Text = "System starting up"
+	wait(0.1)
+	script.Parent.loading.Text = "System starting up."
+	wait(0.1)
+	script.Parent.loading.Text = "System starting up.."
+	wait(0.1)
+	script.Parent.loading.Text = "System starting up..."
+	wait(0.1)
+	script.Parent.loading.Text = "System starting up...."
+	wait(0.1)
+	script.Parent.loading.Text = "System starting up....."
+	wait(0.1)
+	script.Parent.loading.Text = "System starting up."
+	wait(0.1)
+	script.Parent.loading.Text = "System starting up.."
+	wait(0.1)
+	script.Parent.loading.Text = "System starting up..."
+	wait(0.1)
+	script.Parent.loading.Text = "System starting up...."
+	wait(0.1)
+	script.Parent.loading.Text = "System starting up....."
+	wait(0.1)
+	script.Parent.loading.Text = "System starting up."
+	wait(0.1)
+	script.Parent.loading.Text = "System starting up.."
+	wait(0.1)
+	script.Parent.loading.Text = "System starting up..."
+	wait(0.1)
+	script.Parent.loading.Text = "System starting up...."
+	wait(0.1)
+	script.Parent.loading.Text = "System starting up....."
+	wait(0.1)
+	script.Parent.loading.Text = "System starting up \n Loading libraries"
+	wait(0.2)
+	script.Parent.loading.Text = "System starting up \n Loading libraries."
+	wait(0.2)
+	script.Parent.loading.Text = "System starting up \n Loading libraries.."
+	wait(0.2)
+	script.Parent.loading.Text = "System starting up \n Loading libraries..."
+	wait(0.2)
+	script.Parent.loading.Text = "System starting up \n Loading libraries...."
+	wait(0.2)
+	script.Parent.loading.Text = "System starting up \n Loading libraries....."
+	wait(0.2)
+	script.Parent.loading.Text = "System starting up \n Libraries loaded \n Loging in"
+	wait(0.5)
+	script.Parent.loading.Text = "System starting up \n Libraries loaded \n Loging in."
+	wait(0.5)
+	script.Parent.loading.Text = "System starting up \n Libraries loaded \n Loging in.."
+	wait(0.5)
+	script.Parent.loading.Text = "System starting up \n Libraries loaded \n Loging in..."
+	wait(0.5)
+	script.Parent.loading.Text = "System loaded \n Welcome "..game.Players.LocalPlayer.DisplayName
+	wait(2)
+	script.Parent.loading:Destroy()
+	script.Parent.modules.Visible = true
+	debaunce = false
+
+	script.Parent.cancel.MouseButton1Click:Connect(function()
+		if debaunce == false and main_scaled == true then script.Parent.Parent:Destroy() end
+	end)
+end
+coroutine.wrap(IJJSBBI_fake_script)()
