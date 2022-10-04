@@ -1,0 +1,35 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local infiniteyield = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+
+--Properties:
+
+infiniteyield.Name = "infiniteyield"
+infiniteyield.Parent = game:GetService("CoreGui").main.Frame.modules
+infiniteyield.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+infiniteyield.Size = UDim2.new(0, 200, 0, 50)
+infiniteyield.Font = Enum.Font.SourceSans
+infiniteyield.Text = "Load infiniteyield"
+infiniteyield.TextColor3 = Color3.fromRGB(85, 255, 255)
+infiniteyield.TextScaled = true
+infiniteyield.TextSize = 14.000
+infiniteyield.TextStrokeTransparency = 0.000
+infiniteyield.TextWrapped = true
+
+UICorner.CornerRadius = UDim.new(0, 1)
+UICorner.Parent = infiniteyield
+
+-- Scripts:
+
+local function AWFS_fake_script() -- infiniteyield.LocalScript 
+	local script = Instance.new('LocalScript', infiniteyield)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+	end)
+end
+coroutine.wrap(AWFS_fake_script)()
