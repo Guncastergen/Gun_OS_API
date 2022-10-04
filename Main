@@ -1,3 +1,6 @@
+-- Gui to Lua
+-- Version: 3.2
+
 -- Instances:
 
 local main = Instance.new("ScreenGui")
@@ -96,7 +99,7 @@ UIGridLayout.VerticalAlignment = Enum.VerticalAlignment.Center
 
 -- Scripts:
 
-local function TOFBABG_fake_script() -- Frame.DragScript 
+local function YSPOGWA_fake_script() -- Frame.DragScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	--drag sistem
@@ -106,14 +109,14 @@ local function TOFBABG_fake_script() -- Frame.DragScript
 	local dragSpeed = 0.25
 	local dragStart = nil
 	local startPos = nil
-
+	
 	local function updateInput(input)
 		local delta = input.Position - dragStart
 		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
 			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
 	end
-
+	
 	frame.InputBegan:Connect(function(input)
 		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
 			dragToggle = true
@@ -126,7 +129,7 @@ local function TOFBABG_fake_script() -- Frame.DragScript
 			end)
 		end
 	end)
-
+	
 	UIS.InputChanged:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 			if dragToggle then
@@ -134,11 +137,11 @@ local function TOFBABG_fake_script() -- Frame.DragScript
 			end
 		end
 	end)
-
+	
 	--main code
 end
-coroutine.wrap(TOFBABG_fake_script)()
-local function IJJSBBI_fake_script() -- Frame.main 
+coroutine.wrap(YSPOGWA_fake_script)()
+local function SSYEWE_fake_script() -- Frame.main 
 	local script = Instance.new('LocalScript', Frame)
 
 	--mowe script
@@ -148,14 +151,14 @@ local function IJJSBBI_fake_script() -- Frame.main
 	local dragSpeed = 0.25
 	local dragStart = nil
 	local startPos = nil
-
+	
 	local function updateInput(input)
 		local delta = input.Position - dragStart
 		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
 			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
 	end
-
+	
 	frame.InputBegan:Connect(function(input)
 		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
 			dragToggle = true
@@ -168,7 +171,7 @@ local function IJJSBBI_fake_script() -- Frame.main
 			end)
 		end
 	end)
-
+	
 	UIS.InputChanged:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 			if dragToggle then
@@ -176,7 +179,7 @@ local function IJJSBBI_fake_script() -- Frame.main
 			end
 		end
 	end)
-
+	
 	--varibs
 	debaunce = true
 	local TWS = game:GetService("TweenService")
@@ -186,7 +189,7 @@ local function IJJSBBI_fake_script() -- Frame.main
 	local main_scale = TWS:Create(script.Parent,TWSinfo,{Size = script.Parent.Size})
 	local decor_unscale = TWS:Create(script.Parent.decor,TWSinfo,{Size = script.Parent.TextButton.Size})
 	local decor_scale = TWS:Create(script.Parent.decor,TWSinfo,{Size = script.Parent.decor.Size})
-
+	
 	script.Parent.TextButton.MouseButton1Click:Connect(function()
 		if debaunce == false then
 			if main_scaled == true then
@@ -209,7 +212,7 @@ local function IJJSBBI_fake_script() -- Frame.main
 			end
 		end
 	end)
-
+	
 	--startup
 	wait(1)
 	script.Parent.loading.Text = "System starting up"
@@ -269,9 +272,9 @@ local function IJJSBBI_fake_script() -- Frame.main
 	script.Parent.loading:Destroy()
 	script.Parent.modules.Visible = true
 	debaunce = false
-
+	
 	script.Parent.cancel.MouseButton1Click:Connect(function()
 		if debaunce == false and main_scaled == true then script.Parent.Parent:Destroy() end
 	end)
 end
-coroutine.wrap(IJJSBBI_fake_script)()
+coroutine.wrap(SSYEWE_fake_script)()
