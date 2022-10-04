@@ -1,4 +1,3 @@
-function create_main()
 	-- Instances:
 
 	local main = Instance.new("ScreenGui")
@@ -276,5 +275,3 @@ function create_main()
 		end)
 	end
 	coroutine.wrap(IJJSBBI_fake_script)()
-
-end
